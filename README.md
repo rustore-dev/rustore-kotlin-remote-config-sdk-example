@@ -1,4 +1,4 @@
-# Пример использования Remote Config SDK от RuStore Kotlin
+# Пример использования Remote Config SDK от RuStore на kotlin
 
 ## [Документация по Remote Config SDK](https://help.rustore.ru/rustore/for_developers/tools/remote_config/sdk)
 
