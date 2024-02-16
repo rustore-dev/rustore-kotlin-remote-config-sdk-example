@@ -27,7 +27,7 @@ repositories {
 
 ```
 dependencies {
-    implementation("ru.rustore.sdk:remoteconfig:0.0.1")
+    implementation("ru.rustore.sdk:remoteconfig:1.0.0")
 }
 ```
 
