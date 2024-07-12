@@ -10,22 +10,22 @@ class RemoteConfigListenerImpl: RemoteConfigClientEventListener {
     }
 
     override fun firstLoadComplete() {
-        Log.d("HOHOHO", "First Load ended")
+        Log.d("HOHOHO", "firstLoadComplete")
     }
 
     override fun initComplete() {
-        TODO("Not yet implemented")
+        Log.d("HOHOHO", "initComplete")
     }
 
     override fun memoryCacheUpdated() {
-        TODO("Not yet implemented")
+        Log.d("HOHOHO", "memoryCacheUpdated")
     }
 
     override fun persistentStorageUpdated() {
-        TODO("Not yet implemented")
+        Log.d("HOHOHO", "persistentStorageUpdated")
     }
 
     override fun remoteConfigNetworkRequestFailure(throwable: Throwable) {
-        TODO("Not yet implemented")
+        Log.d("HOHOHO", "remoteConfigNetworkRequestFailure")
     }
 }
