@@ -17,10 +17,10 @@ import ru.rustore.remoteconfigexample.ui.theme.RemoteConfigExampleTheme
 import ru.rustore.sdk.remoteconfig.RemoteConfigClient
 
 class MainActivity : ComponentActivity() {
-    val DEFAULT_COLOR = "default"
-    val RED_COLOR = "red"
-    val GREEN_COLOR = "green"
-    val BLUE_COLOR = "blue"
+    private val DEFAULT_COLOR = "default"
+    private val RED_COLOR = "red"
+    private val GREEN_COLOR = "green"
+    private val BLUE_COLOR = "blue"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

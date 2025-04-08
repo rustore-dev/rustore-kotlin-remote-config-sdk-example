@@ -22,11 +22,20 @@ repositories {
 }
 ```
 
-Подключение зависимости. Добавьте следующий код в свой конфигурационный файл для подключения зависимости `build.gradle`:
+Подключение зависимости через BOM. Добавьте следующий код в свой `build.gradle`:
 
 ```
 dependencies {
-    implementation("ru.rustore.sdk:remoteconfig:6.0.0")
+    implementation(platform("ru.rustore.sdk:bom:2025.02.01"))
+    implementation("ru.rustore.sdk:remoteconfig")
+}
+```
+
+Подключение зависимости напрямую. Добавьте следующий код в свой `build.gradle`:
+
+```
+dependencies {
+    implementation("ru.rustore.sdk:remoteconfig:8.0.0")
 }
 ```
 

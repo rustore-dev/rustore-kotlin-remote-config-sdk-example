@@ -48,8 +48,8 @@ android {
 }
 
 dependencies {
-
-    implementation("ru.rustore.sdk:remoteconfig:6.0.0")
+    implementation(platform("ru.rustore.sdk:bom:2025.02.01"))
+    implementation("ru.rustore.sdk:remoteconfig")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
