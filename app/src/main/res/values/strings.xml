@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RemoteConfigExample</string>
+
+    <string name="rustore_app_id">1dca9044-c204-47ea-9618-fafe3af30f1a</string>
+    <string name="rustore_device_id">111</string>
+    <string name="rustore_account">Auf</string>
+    <string name="rustore_language">ru</string>
+    <string name="rustore_update_behaviour">Actual</string>
 </resources>

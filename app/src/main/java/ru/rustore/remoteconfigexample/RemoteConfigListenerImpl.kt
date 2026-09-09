@@ -4,28 +4,36 @@ import android.util.Log
 import ru.rustore.sdk.remoteconfig.RemoteConfigClientEventListener
 import ru.rustore.sdk.remoteconfig.RemoteConfigException
 
-class RemoteConfigListenerImpl: RemoteConfigClientEventListener {
+private const val LOG_TAG = "rustore"
+
+class RemoteConfigListenerImpl : RemoteConfigClientEventListener {
+
+    private fun log(message: String) {
+        Log.d(LOG_TAG, message)
+        RemoteConfigEvents.add(message)
+    }
+
     override fun backgroundJobErrors(exception: RemoteConfigException.BackgroundConfigUpdateError) {
-        //Возвращает ошибку фоновой работы
+        log("backgroundJobErrors: ${exception.toLogMessage()}")
     }
 
     override fun firstLoadComplete() {
-        Log.d("HOHOHO", "firstLoadComplete")
+        log("firstLoadComplete")
     }
 
     override fun initComplete() {
-        Log.d("HOHOHO", "initComplete")
+        log("initComplete")
     }
 
     override fun memoryCacheUpdated() {
-        Log.d("HOHOHO", "memoryCacheUpdated")
+        log("memoryCacheUpdated")
     }
 
     override fun persistentStorageUpdated() {
-        Log.d("HOHOHO", "persistentStorageUpdated")
+        log("persistentStorageUpdated")
     }
 
     override fun remoteConfigNetworkRequestFailure(throwable: Throwable) {
-        Log.d("HOHOHO", "remoteConfigNetworkRequestFailure")
+        log("remoteConfigNetworkRequestFailure: ${throwable.toLogMessage()}")
     }
 }
